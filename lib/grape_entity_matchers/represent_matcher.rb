@@ -165,6 +165,7 @@ module GrapeEntityMatchers
       def allow_exposure_methods(entity, exposures)
         exposures.keys.each do |key|
           allow(entity).to receive(key).and_return(exposures[key].nil? ? :value : nil)
+          allow(entity).to receive(:is_defined_in_entity?).with(key).and_return(true)
         end
       end
 

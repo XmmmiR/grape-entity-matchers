@@ -2,9 +2,9 @@
 
 - add support for minitest
 
-  # 1.3.1 (unreleased)
+  # 1.4.0 (09/25/2024)
 
-- {add changes here}
+- support for grape-entity ~> 1.0.0
 
   # 1.3.0 (01/24/2020)
 
